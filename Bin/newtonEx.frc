@@ -1,0 +1,27 @@
+[fractal]
+fileType=fractal
+version=0.1
+fractalName=NewtonEx
+loopXFunction=N:3; seta:ArcTan2(x,y); r:sqrt(sqr(x)+sqr(y))*(N-1)/N; sl:1.0/(N*IntPower(r,(N-1))); (r * cos(seta) +sl* cos((1 - N) * seta))
+loopYFunction=(r * sin(seta) +sl* sin((1 - N) * seta))
+maxi=7
+stopFunction=0
+x0=-0.60496557458553288
+y0=0.172392606115949778
+r=0.167309088129991481
+seta=0
+picWidth=2000
+picHeight=1500
+colorFunction0=m1:max(0,maxi-1);m2:max(0,maxi-2);0.6*log(1+abs(xn[m1]-xn[m2])*abs(yn[m1]-yn[m2]))
+colorFunction1=0.6*log(1+sqr(xn[m1]-xn[m2])+sqr(yn[m1]-yn[m2]))
+colorFunction2=2*log(1+abs(xn[maxi]-xn[m1])*abs(yn[maxi]-yn[m1]))
+colorType=RGB
+randColorK0=0.5
+randColorK1=0.5
+randColorK2=0.5
+randColor0=0.4296875
+randColor1=0.9453125
+randColor2=0.8046875
+smoothIFunction=
+smoothXFunction=
+smoothYFunction=

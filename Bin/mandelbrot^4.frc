@@ -1,0 +1,27 @@
+[fractal]
+fileType=fractal
+version=0.1
+fractalName=Mandelbrot^4
+loopXFunction=sqr(x*x)+sqr(y*y)-sqr(x*y)*6 +x0
+loopYFunction=(x*x-y*y)*x*y*4+y0
+maxi=10000
+stopFunction=M:16;(sqr(x)+sqr(y)) >=M
+x0=0
+y0=0
+r=1.5
+seta=0
+picWidth=2000
+picHeight=1500
+colorFunction0=a:(i=maxi);s:9*(log2(1e-10+sm_i)); if(a,6*ln(1+abs(xn[i-1])),s*0.3)
+colorFunction1=if(a, 6*ln(1+abs(yn[i-1])), -s*0.5+1.7)
+colorFunction2=if(a, 6*ln(1+abs(xn[i-1])+abs(yn[i-1])), s*0.4+0.7)
+smoothIFunction=
+smoothXFunction=
+smoothYFunction=
+colorType=YUV
+randColorK0=0.25
+randColorK1=0.25
+randColorK2=0.25
+randColor0=0.203125
+randColor1=1.7265625
+randColor2=1.1015625

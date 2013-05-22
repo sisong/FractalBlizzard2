@@ -1,0 +1,8 @@
+*.dcu
+*.~*~
+*.local
+*.identcache
+__history
+*.drc
+*.map
+*.ddp

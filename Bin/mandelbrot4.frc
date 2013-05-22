@@ -1,0 +1,24 @@
+[fractal]
+fileType=fractal
+version=0.1
+fractalName=Mandelbrot
+loopXFunction=sqr(x)-sqr(y) +x0
+loopYFunction=x*y*2+y0
+maxi=11598
+stopFunction=M:16;(sqr(x)+sqr(y)) >=M
+x0=-0.745538871740381
+y0=-0.120689379528088
+r=1.06287054990606E-8
+seta=140
+picWidth=8000
+picHeight=6000
+colorFunction0=a:(i=maxi);s:sm_i;  if(a, 1000000*log(1+abs(xn[i-1])), cos(abs(s)))
+colorFunction1=if(a, 2000000*log(1+abs(yn[i-1])), 30/log(s+1.7))
+colorFunction2=if(a, 3000000*log(1+abs(xn[i-1])+abs(yn[i-1])), sin(s/150))
+colorType=YUV
+randColorK0=4
+randColorK1=4
+randColorK2=4
+randColor0=0.8359375
+randColor1=0
+randColor2=0.9296875

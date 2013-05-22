@@ -1,0 +1,27 @@
+[fractal]
+fileType=fractal
+version=0.1
+fractalName=Julia
+loopXFunction=sqr(x)-sqr(y) -0.814428286849853337
+loopYFunction=x*y*2 +0.196330238953239046
+maxi=10000
+stopFunction=M:16;(sqr(x)+sqr(y)) >=M
+x0 =0
+y0 =0
+r=1.2
+seta=0
+picWidth=2000
+picHeight=1500
+colorFunction0=isIn:(i=maxi);s:ln(1e-10+abs(sm_i));  if(isIn, 6*log(1+abs(xn[i-1])), s*0.6)
+colorFunction1=if(isIn, 6*log(1+abs(yn[i-1])), -s*0.4+0.3)
+colorFunction2=if(isIn, 6*log(1+abs(xn[i-1])+abs(yn[i-1])), s*0.3+0.7)
+colorType=YUV
+randColorK0=1
+randColorK1=1
+randColorK2=1
+randColor0=0.34375
+randColor1=0.3125
+randColor2=0.53125
+smoothIFunction=
+smoothXFunction=
+smoothYFunction=
