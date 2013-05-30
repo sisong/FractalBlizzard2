@@ -6,3 +6,5 @@ __history
 *.drc
 *.map
 *.ddp
+
+.DS_Store
